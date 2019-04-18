@@ -246,7 +246,7 @@
             '                                    <!--loop-->\n' +
             '                                    <!--poster=""-->\n' +
             '                            <!--&gt;</video>-->\n' +
-            '                            <embed src=\'http://player.youku.com/player.php/sid/XNDEwMzg0MTgwMA==/v.swf\' allowFullScreen=\'true\' quality=\'high\' width=\'800\' height=\'540\' align=\'middle\' allowScriptAccess=\'no\' type=\'application/x-shockwave-flash\'></embed>\n' +
+            '                            <embed src=\'https://player.youku.com/player.php/sid/XNDEwMzg0MTgwMA==/v.swf\' allowFullScreen=\'true\' quality=\'high\' width=\'800\' height=\'540\' align=\'middle\' allowScriptAccess=\'no\' type=\'application/x-shockwave-flash\'></embed>\n' +
             '                        </div>\n' +
             '                    </div>');
         $cover.find('.main').css({marginTop:'-600px',opacity:0}).stop().animate({
