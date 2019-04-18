@@ -1,0 +1,983 @@
+
+*{margin:0;padding:0;font-family: 'Microsoft YaHei';text-decoration: none}
+a{color:#222}
+img{display: block;border: none;}
+li{list-style: none;}
+body{min-width: 1226px;}
+/*header*/
+#header{
+    width: 100%;
+    height: 40px;
+    background: rgb(51,51,51);
+}
+#header .main{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+#header .main .left{
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+#header .main .left li,#header .main .right .login li{
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+    color: #666;
+    margin-right: 5px;
+}
+#header .main .left li a,#header .main .right .login li a {
+    color: #b0b0b0;
+    margin-right: 5px;
+}
+
+#header .main .right{
+    width: 300px;
+    height: 100%;
+    float: right;
+}
+#header .main .right .login{
+    width: 150px;
+    float: left;
+}
+#header .main .right .buy{
+    width: 120px;
+    float: right;
+    height: 100%;
+    background: #424242;
+    position: relative;
+}
+#header .main .right .buy a.cart{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+#header .main .right .buy .iconfont{
+    margin-right: 5px;
+}
+#header .main .right .buy a.hover{
+    color: #f60;
+    background: #fff;
+}
+#header .main .right .buy .hide{
+    width: 320px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    /*border: 1px solid #666;*/
+    border-top: none;
+    box-shadow: 0 0 1px #666;
+    display: none;
+    font-size: 12px;
+    line-height: 100px;
+    text-align: center;
+    z-index: 98;
+}
+
+/*nav*/
+#nav{
+    width: 100%;
+    height: 49px;
+    margin-top: 20px;
+    position: relative;
+}
+#nav .main{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+#nav .logo{
+    float: left;
+    background: #f60;
+}
+#nav .logo a{
+    width: 100%;
+    height: 100%;
+}
+#nav .content{
+    width: 670px;
+    height: 100%;
+    float: left;
+    margin-left: 190px;
+}
+#nav .content ul li{
+    float: left;
+    height: 69px;
+    line-height: 49px;
+}
+#nav .content ul li a{
+    color: #333;
+    height: 69px;
+    padding: 0 10px;
+    display: block;
+    font-size: 16px;
+}
+#nav .content ul li a:hover{
+    color: #f60;
+}
+#nav .hide{
+    width: 100%;
+    height: 230px;
+    background: #fff;
+    position: absolute;
+    z-index: 95;
+    top: 69px;
+    left: 0;
+    border-top: 1px solid #999;
+    box-shadow: 0 2px 2px #999;
+    display: none;
+}
+#nav .hide .main{
+    width: 1226px;
+    height: 230px;
+    margin: 0 auto;
+}
+#nav .hide .main ul{
+    display: none;
+}
+#nav .hide .main ul li{
+    width: 200px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+#nav .hide .main ul li .img{
+    width: 199px;
+    height: 110px;
+    margin-top: 35px;
+    border-right: 1px solid #ddd;
+}
+#nav .hide .main ul li:nth-child(6) .img{
+    border-right: none;
+}
+#nav .hide .main ul li .img img{
+    margin: 0 auto;
+}
+#nav .hide .main ul li p.name{
+    margin-top: 20px;
+}
+#nav .hide .main ul li p.price{
+    color: #f60;
+}
+#nav .main .search{
+    width: 300px;
+    height: 49px;
+    float: right;
+    z-index: 97;
+}
+#nav .main .search .input{
+    transition: .2s;
+    width: 248px;
+    height: 47px;
+    border: 1px solid #ccc;
+    float: left;
+    border-right: none;
+    position: relative;
+}
+#nav .main .search .input input{
+    outline: none;
+    border: none;
+    line-height: 47px;
+    text-indent: 11px;
+}
+#nav .main .search .input .shide{
+    width: 100%;
+    height: 360px;
+    border: 1px solid #f60;
+    background: #fff;
+    position: absolute;
+    top: 47px;
+    left: -1px;
+    font-size: 14px;
+    display: none;
+    z-index: 96;
+}
+#nav .main .search .input .shide ul li{
+    height: 36px;
+    line-height: 36px;
+    text-indent: 16px;
+    width: 100%;
+    position: relative;
+}
+#nav .main .search .input .shide ul li:hover{
+    background: #eee;
+}
+#nav .main .search .input .shide ul li a p{
+    display: inline;
+    color: #aaa;
+}
+#nav .main .search .input .shide ul li a p:nth-child(2){
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+#nav .main .search .input .choose{
+    position: absolute;
+    top: 12px;
+    right: 6px;
+}
+#nav .main .search .input .choose a{
+    transition: .2s;
+    font-size: 12px;
+    color: #aaa;
+    background: #eee;
+    padding: 0 2px;
+}
+#nav .main .search .input .choose a:hover{
+    color: #fff;
+    background: #f60;
+}
+#nav .main .search .btn{
+    transition: .2s;
+    width: 49px;
+    height: 47px;
+    border: 1px solid #ccc;
+    float: right;
+    line-height: 47px;
+    text-align: center;
+
+}
+#nav .main .search .btn:hover{
+    background: #f60;
+    color: #fff;
+    border-color: #f60;
+}
+#nav .main .search .btn:hover button{
+    background: #f60;
+    color: #fff;
+}
+#nav .main .search .btn button{
+    transition: .2s;
+    outline: none;
+    border:none;
+    background: #fff;
+    color: #aaa;
+}
+#nav .main .search .btn button i{
+    cursor: pointer;
+    font-size: 20px;
+}
+#nav .main .search:hover .input,#nav .main .search:hover .btn{
+    border-color: #999;
+}
+#nav .main .search.focus .input,#nav .main .search.focus .btn{
+    border-color: #f60;
+}
+
+/*banner*/
+#banner{
+    width: 1226px;
+    height: 460px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 80;
+}
+#banner .main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#banner .main a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#banner .main a.on{
+    display: block;
+}
+#banner .main .tab{
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+}
+#banner .main .tab ul{
+    float: right;
+}
+#banner .main .tab ul li{
+    height: 8px;
+    width: 8px;
+    background: #999;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 8px;
+    float: left;
+    cursor: pointer;
+}
+#banner .main .tab ul li.on{
+    background: #fff;
+    border-color: #999;
+}
+#banner .main .btn .arrow{
+    width: 40px;
+    height: 66px;
+    border-radius: 4px;
+    position: absolute;
+    top: 197px;
+    animation: .2s;
+    cursor: pointer;
+}
+#banner .main .btn .arrow.left{
+    left: 236px;
+    background-image: url(../img/banner/btn.png);
+    background-position: 80px 0;
+}
+#banner .main .btn .arrow.left:hover{
+    background-position: 0 0;
+}
+#banner .main .btn .arrow.right{
+    right: 0;
+    background-image: url(../img/banner/btn.png);
+    background-position: 40px 0;
+}
+#banner .main .btn .arrow.right:hover{
+    background-position: 125px 0;
+}
+#banner .list{
+    width: 236px;
+    height: 460px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #333;
+    background: rgba(0,0,0,.5);
+
+}
+#banner .list ul{
+    width: 230px;
+    height: 420px;
+    margin: 20px 0;
+}
+#banner .list ul li{
+    width: 100%;
+    height: 10%;
+    text-indent: 16px;
+    line-height: 42px;
+    position: relative;
+}
+#banner .list>ul>li:hover{
+    background: #f60;
+}
+#banner .list>ul>li p{
+    color:#fff;
+    font-size: 14px;
+    display: inline;
+}
+#banner .list ul li span{
+    color:#ccc;
+    display: inline;
+    position: absolute;
+    right: 20px;
+}
+#banner .list .hide{
+    height: 460px;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left: 230px;
+    width: 240px;
+    display: none;
+}
+#banner .list .hide ul li{
+    width: 248px;
+    height: 75px;
+    position: absolute;
+}
+#banner .list .hide ul li a{
+    height: 75px;
+    display: block;
+    float: left;
+}
+#banner .list .hide ul li .title{
+    width: 170px;
+}
+#banner .list .hide ul li .title img{
+    margin-top: 20px;
+    display: inline-block;
+}
+#banner .list .hide ul li .title span{
+    height: 100%;
+    line-height: 100%;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: 0;
+    color: #000;
+}
+#banner .list .hide ul li .title span:hover{
+    color:#f60;
+}
+#banner .list .hide ul li .buy{
+    width: 60px;
+}
+#banner .list .hide ul li .buy p{
+    margin-top:25px;
+    width:60px;
+    border:1px solid #f60;
+    line-height:24px;
+    height:24px;
+    color:#f60;
+}
+#banner .list .hide ul li .buy p:hover{
+    color:#fff;
+    background: #f60;
+}
+#middle{
+    width: 1226px;
+    height: 170px;
+    margin: 10px auto;
+}
+#middle .first{
+    width: 235px;
+    height: 100%;
+    background: #333;
+    float: left;
+}
+#middle .first ul{
+    width: 100%;
+    height: 100%;
+}
+#middle .first ul li{
+    width: 33%;
+    height: 50%;
+    float: left;
+    position: relative;
+}
+#middle .first ul li a{
+    font-size: 14px;
+    text-align: center;
+    color:#aaa;
+}
+#middle .first ul li a:hover{
+    color: #eee;
+}
+#middle .first ul li a i{
+    position: absolute;
+    top: 27px;
+    left: 33px;
+}
+#middle .first ul li a span{
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+#middle .first ul li a .right{
+    position: absolute;
+    top: 8px;
+    left: 80px;
+    width: 1px;
+    height: 70px;
+    background: #aaa;
+    opacity: 0.5;
+}
+#middle .first ul li a .bottom{
+    position: absolute;
+    top: 85px;
+    left: 8px;
+    width: 70px;
+    height: 1px;
+    background: #aaa;
+    opacity: 0.5;
+}
+#middle .right{
+    height: 170px;
+    float: right;
+}
+#middle .right ul li{
+    width: 315px;
+    margin-left: 15px;
+    float: left;
+}
+#middle .right ul li img{
+     width: 315px;
+}
+
+#star{
+    width: 1226px;
+    height: 340px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+#star .head{
+    width: 1226px;
+    height: 60px;
+}
+#star .head p{
+    margin-top: 20px;
+    font-size: 24px;
+    float: left;
+}
+#star .head .btn{
+    width: 71px;
+    margin-top: 35px;
+    margin-right: 10px ;
+    color: #aaa;
+    border: 1px solid #aaa;
+    float: right;
+}
+#star .head .btn span{
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+}
+#star .head .btn span.left{
+    border-right: 1px solid #aaa;
+}
+#star .head .btn span.able{
+    cursor: pointer;
+    color:#777;
+}
+#star .head .btn span.able:hover{
+    color:#f60;
+}
+#star .content{
+    width: 300%;
+    height: 300px;
+}
+#star .content ul{
+    width: 1226px;
+    height: 280px;
+    margin-top: 30px;
+    float: left;
+    overflow: hidden;
+}
+#star .content ul li{
+    width: 234px;
+    height: 300px;
+    border-top: 1px solid #0C0C0C;
+    margin:0 5px;
+    float: left;
+}
+#star .content ul li a img{
+    margin-left: 37px;
+}
+#star .content ul li a p{
+    width: 234px;
+    text-align: center;
+    display: block;
+}
+#star .content ul li span{
+    margin-top: 4px;
+    width: 234px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+#star .content ul li span.des{
+    color:#ccc;
+}
+#star .content ul li span.price{
+    margin-top: 8px;
+    color: #f60;
+}
+/*part2*/
+#part2{
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 70px;
+    background: #F5F5F5;
+}
+/*shadow*/
+#part2 .shadow{
+    transition: .2s;
+}
+#part2 .shadow:hover{
+    top: -2px;
+    box-shadow: 0 2px 10px #aaa;
+}
+#part2 .appf .appraise{
+    width: 236px;
+    height: 72px;
+    background: #f60;
+    font-size: 14px;
+    position: absolute;
+    top: 228px;
+    left: 0;
+    animation: 1s;
+    display: none;
+}
+#part2 .appf .appraise p{
+    color: #fff;
+}
+#part2 .appf .appraise p.user{
+    margin-left: 50px;
+    display: inline;
+    float: left;
+    color: #aaa;
+}
+#part2 .appf:hover .appraise{
+    display: block;
+}
+
+#part2 #smart,#part2 #fittings,#part2 #content,#part2 #video{
+    width: 1226px;
+    height: 700px;
+    margin: 0 auto;
+}
+#part2 #content{
+    height: 500px;
+}
+#part2 #video{
+    height: 360px;
+}
+#part2 #smart .head,#part2 #fittings .head,#part2 #content .head,#part2 #video .head{
+    width: 100%;
+    height: 60px;
+}
+#part2 #smart .head p,#part2 #fittings .head p,#part2 #content .head p,#part2 #video .head p{
+    font-size: 24px;
+    display: inline;
+}
+#part2 #smart .head .right,#part2 #fittings .head .right,#part2 #video .head .right{
+    margin: 20px 5px 0 0;
+    float: right;
+}
+#part2 #smart .head .right a,#part2 #fittings .head .right a,#part2 #video .head .right a{
+    color: #aaa;
+}
+#part2 #smart .head .right a:hover,#part2 #video .head .right a:hover{
+    color: #f60;
+}
+#part2 #smart .content,#part2 #fittings .content{
+    width: 100%;
+    height: 614px;
+}
+#part2 #smart .content .left,#part2 #fittings .content .left{
+    float: left;
+}
+#part2 #smart .content .right,#part2 #fittings .content .right{
+    width: 980px;
+    height: 614px;
+    margin-left: 12px;
+    float: right;
+    position: relative;
+}
+#part2 #smart .content .right ul,#part2 #fittings .content .right ul{
+    width: 100%;
+    height: 300px;
+}
+#part2 #smart .content .right ul li,#part2 #fittings .content .right ul li{
+    width: 236px;
+    height: 300px;
+    margin:0 0 14px 9px;
+    text-align: center;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+#part2 #smart .content .right ul li a img,#part2 #fittings .content .right ul li a img{
+    margin: 0 auto;
+    padding-top: 40px;
+}
+#part2 #smart .content .right ul li span,#part2 #fittings .content .right ul li span{
+    margin-top: 10px;
+    display: block;
+}
+#part2 #smart .content .right ul li span.des,#part2 #fittings .content .right ul li span.des{
+    font-size: 14px;
+    color: #aaa;
+}
+#part2 #smart .content .right ul li span.price,#part2 #fittings .content .right ul li span.price{
+    color: #f60;
+}
+#part2 #smart .content .right ul li p.baoyou,#part2 #fittings .content .right ul li p.baoyou{
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    background: #f60;
+    margin-left: -30px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+#part2 #fittings .head .right ul li{
+    margin-left: 15px;
+    font-size: 18px;
+    float: left;
+    cursor: pointer;
+}
+#part2 #fittings .head .right ul li.on{
+    color: #f60;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f60;
+}
+#part2 #fittings .content .left{
+    height: 614px;
+}
+#part2 #fittings .content .left a img{
+    margin-bottom: 14px;
+}
+#part2 #fittings .content .right ul li.uniqe{
+    background: #f5f5f5;
+}
+#part2 #fittings .content .right ul li.uniqe div{
+    width: 236px;
+    height: 140px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+#part2 #fittings .content .right ul li.uniqe div.little{
+    position: relative;
+}
+#part2 #fittings .content .right ul li.uniqe div.little img{
+    display: inline;
+    margin-right: 20px;
+    float: right;
+}
+#part2 #fittings .content .right ul li.uniqe div.little p{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    display: block;
+    color: #222;
+}
+#part2 #fittings .content .right ul li.uniqe div.little span{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 14px;
+}
+#part2 #fittings .content .right ul li.uniqe div.more{
+    position: relative;
+}
+#part2 #fittings .content .right ul li.uniqe div.more p{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    display: block;
+    color: #222;
+    font-size: 20px;
+}
+#part2 #fittings .content .right ul li.uniqe div.more span{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    display: block;
+    color: #aaa;
+    font-size: 14px;
+}
+#part2 #fittings .content .right ul li.uniqe div.more i{
+    line-height: 140px;
+    margin-right: 20px;
+    float: right;
+    font-size: 50px;
+    color: #f60;
+}
+#part2 #fittings .content .right ul{
+    position: absolute;
+    right: 0;
+    top:0;
+    display: none;
+}
+#part2 #fittings .content .right ul.on{
+    display: block;
+}
+/*content*/
+#part2 #content .content{
+
+}
+#part2 #content .content .box{
+    width:296px;
+    height: 400px;
+    margin-right: 14px;
+    border-top: 1px solid #00bcd4;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+#part2 #content .content .box p{
+    line-height: 80px;
+    text-align: center;
+}
+#part2 #content .content .box>ul{
+    width: 300%;
+    height: 270px;
+    margin-left: 0;
+    float: left;
+}
+#part2 #content .content .box ul li{
+    width: 296px;
+    height: 100%;
+    float: left;
+}
+#part2 #content .content .box ul li a{
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+#part2 #content .content .box ul li a.name{
+    font-size: 20px;
+}
+#part2 #content .content .box ul li a.des{
+    width: 211px;
+    margin: 0 auto 10px;
+    color: #aaa;
+    font-size: 12px;
+}
+#part2 #content .content .box ul li a.price{
+    font-size: 14px;
+    color: #f60;
+}
+#part2 #content .content .box ul li a.img{
+    width: 211px;
+    margin: 0 auto;
+}
+#part2 #content .content .box .arrow span{
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: -20px;
+    background: #7f7f7f;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0;
+    animation: .2s;
+}
+#part2 #content .content .box .arrow span.right{
+    margin-left: 276px;
+}
+#part2 #content .content .box:hover .arrow span{
+    opacity: 0.5;
+}
+#part2 #content .content .box .arrow span:hover{
+    opacity: 1;
+}
+#part2 #content .content .box .tab{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -40px;
+    z-index: 70;
+}
+#part2 #content .content .box .tab ul{
+    width: 150px;
+    height: 20px;
+}
+#part2 #content .content .box .tab ul li{
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #aaa;
+    cursor: pointer;
+}
+#part2 #content .content .box .tab ul li.on{
+    border: 2px solid #f60;
+    background: #fff;
+}
+/*video*/
+#part2 #video .content{
+    width: 1226px;
+    height: 300px;
+}
+#part2 #video .content ul{
+    width: 100%;
+    height: 300px;
+}
+#part2 #video .content ul li{
+    width: 294px;
+    height: 300px;
+    margin-right: 15px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+#part2 #video .content ul li a{
+    display: block;
+}
+#part2 #video .content ul li a.img{
+    cursor: pointer;
+}
+#part2 #video .content ul li a.title{
+    font-size: 14px;
+    margin-top: 40px;
+}
+#part2 #video .content ul li a.title:hover{
+    color: #f60;
+}
+#part2 #video .content ul li p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+}
+#part2 #video .content ul li i{
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    top: 136px;
+    left: 10px;
+}
+#part2 #video .content ul li a.img:hover + a.play>i{
+    color:#f60;
+}
+#part2 #video .cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 100;
+    display: none;
+}
+#part2 #video .cover .main{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+}
+#part2 #video .cover .main .head{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background: #fff;
+}
+#part2 #video .cover .main .head p{
+    margin-left: 20px;
+}
+#part2 #video .cover .main .head p.close{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+}
+#part2 #video .cover .main .head p.close:hover{
+    background: red;
+    color: #fff;
+}
